@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --quicksand:"Quicksand", sans-serif;
+    --Exo-2 :"Exo 2", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background:  #6366f1;
+}
+
+ul li {
+    padding:6px 8px 1px 20px;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li::before {
+    content: '';
+    background-image: url(img/unchecked.png);
+    background-position: left;
+    background-size: cover;
+    height: 28px; 
+    width:28px;    
+    position: absolute;
+    left: 54%;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(img/checked.png);
+    background-position: left;
+    background-size: cover; 
+}
