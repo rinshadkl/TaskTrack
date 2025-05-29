@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="src/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
                     <h1 class="text-4xl font-bold">To-Do-List</h1><i class='bx bx-notepad text-5xl text-indigo-500'></i>
                 </div>
                 <div class="input flex items-center w-full">
-                    <input type="text" placeholder="Add your text" id="inputBox"
+                    <input type="text" placeholder="Add your task" id="inputBox"
                         class="bg-slate-300 py-[7px] px-[20px] rounded-xl rounded-tr-none rounded-br-none w-3/4 outline-none">
                     <button onclick="addTask()"
                         class="bg-indigo-500 py-[7px] px-[20px] rounded-tr-xl rounded-br-xl text-[#fff]">Add</button>
